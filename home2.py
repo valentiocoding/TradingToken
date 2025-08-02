@@ -18,9 +18,9 @@ buy_rate = st.number_input("Harga Beli per USDT (dari penjual luar)", value=None
 
 if erate and total_usdt and buy_rate:
     rates = {
-        "R (-20)": erate - 20,
-        "DB (-1.3%)": erate / 1.013,
-        "CFX (-4%)": erate / 1.04
+        "R (+20)": erate + 20,
+        "DB (+1.3%)": erate * 1.013,
+        "CFX (+4%)": erate * 1.04
     }
 
     sell_df = pd.DataFrame([
